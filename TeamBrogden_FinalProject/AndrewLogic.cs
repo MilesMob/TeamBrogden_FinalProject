@@ -8,7 +8,7 @@ namespace TeamBrogden_FinalProject
 {
     public class AndrewLogic
     {
-        public string CrackSafe(int n, int k)
+        public static string SafeCrack(int n, int k)
         {
             HashSet<string> seen = new HashSet<string>();
             StringBuilder sb = new StringBuilder();
