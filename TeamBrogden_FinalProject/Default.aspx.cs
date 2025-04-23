@@ -39,7 +39,7 @@ namespace TeamBrogden_FinalProject
         protected void AndrewButton_Click(object sender, EventArgs e)
         {
             LabelProblem.Text = "There is a safe protected by a password. The password is a sequence of n digits where each digit can be in the range [0, k - 1].\r\n\r\nThe safe has a peculiar way of checking the password. When you enter in a sequence, it checks the most recent n digits that were entered each time you type a digit.\r\n\r\nFor example, the correct password is \"345\" and you enter in \"012345\":\r\nAfter typing 0, the most recent 3 digits is \"0\", which is incorrect.\r\nAfter typing 1, the most recent 3 digits is \"01\", which is incorrect.\r\nAfter typing 2, the most recent 3 digits is \"012\", which is incorrect.\r\nAfter typing 3, the most recent 3 digits is \"123\", which is incorrect.\r\nAfter typing 4, the most recent 3 digits is \"234\", which is incorrect.\r\nAfter typing 5, the most recent 3 digits is \"345\", which is correct and the safe unlocks.\r\nReturn any string of minimum length that will unlock the safe at some point of entering it.";
-            LabelTest.Text = "(n=2, k=2)";
+            LabelTest.Text = "Input: (n=2, k=2)";
             var result = new AndrewLogic().Run();
             LabelSolution.Text = "Generated Sequence: " + result;
 
@@ -52,7 +52,12 @@ namespace TeamBrogden_FinalProject
 
         protected void RhodaButton_Click(object sender, EventArgs e)
         {
-
+            LabelProblem.Text = "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.";
+            Image2.ImageUrl = "rainwatertrap.png";
+            Image2.Visible = true;
+            LabelTest.Text = "Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]";
+            var result = new RhodaProblem().Run();
+            LabelSolution.Text = result;
         }
 
     }
