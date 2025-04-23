@@ -55,6 +55,7 @@
             <div class="row mb-3">
                 <div class="col">
                     <asp:Label ID="LabelProblem" runat="server" CssClass="form-text text-muted" />
+                    <asp:Label ID="LabelTest" runat="server" />
                 </div>
             </div>
 
