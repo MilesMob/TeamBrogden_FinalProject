@@ -1,4 +1,18 @@
-﻿using System;
+﻿// File Name: TeamBrogden_FinalProject
+// Joey King
+// Final Project
+// 4/29/25
+// IS 3050 (001)
+// Spring 2025
+// Demonstrate Understanding of C# Concepts
+
+
+
+
+
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
