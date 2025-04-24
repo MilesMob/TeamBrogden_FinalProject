@@ -47,6 +47,10 @@ namespace TeamBrogden_FinalProject
 
         protected void JoeyButton_Click(object sender, EventArgs e)
         {
+            LabelProblem.Text="There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.\r\n\r\nYou are giving candies to these children subjected to the following requirements:\r\n\r\nEach child must have at least one candy.\r\nChildren with a higher rating get more candies than their neighbors.\r\nReturn the minimum number of candies you need to have to distribute the candies to the children.\r\n\r\n ";
+            LabelTest.Text="Input: ratings = [1,0,2]\r\nOutput: 5\r\nExplanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.";
+            var result = new JoeyLogic().Run();
+            LabelSolution.Text = result;
 
         }
 
