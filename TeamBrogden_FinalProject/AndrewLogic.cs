@@ -8,43 +8,33 @@ namespace TeamBrogden_FinalProject
 {
     public class AndrewLogic
     {
-        public string CrackSafe(int n, int k)
+        public string Run()
         {
+            int n = 2; // Length of each password combination
+            int k = 2; // Digits 0 to k-1
 
-            var numberOfStates = (int)Math.Pow(k, n - 1);
+            var visited = new HashSet<string>();
+            var sb = new StringBuilder();
+            string start = new string('0', n - 1); // Starting prefix, e.g., "0" if n = 2
 
-            var result = new LinkedList<int>();
-            var states = new Dictionary<int, int>();
-            for (var i = 0; i < numberOfStates; i++)
+            DFS(start, visited, sb, k, n);
+
+            sb.Append(start); // Append the start prefix at the end
+            return sb.ToString(); // Final result
+        }
+
+        private void DFS(string node, HashSet<string> visited, StringBuilder sb, int k, int n)
+        {
+            for (int i = 0; i < k; i++)
             {
-                states[i] = 0;
-            }
-
-            void Dfs(int state, int symbol)
-            {
-                var nextStateBase = state * k % numberOfStates;
-
-                while (states[state] < k)
+                string edge = node + i;
+                if (!visited.Contains(edge))
                 {
-                    var currentValue = states[state];
-                    var nextState = (nextStateBase + currentValue) % numberOfStates;
-                    var nextStateCurrentValue = states[nextState];
-                    states[state] = currentValue + 1;
-
-                    Dfs(nextState, currentValue);
+                    visited.Add(edge);
+                    DFS(edge.Substring(1), visited, sb, k, n);
+                    sb.Append(i);
                 }
-                result.AddFirst(symbol);
-
             }
-
-            Dfs(0, 0);
-            result.RemoveFirst();
-            foreach (var i in Enumerable.Range(0, n - 1))
-            {
-                result.AddFirst(0);
-            }
-            var resultString = String.Join("", result.AsEnumerable());
-            return resultString;
         }
     }
 }
