@@ -29,7 +29,7 @@
     <form id="form1" runat="server">
 
 
-        <div class="container">
+        <div class="container border border-5">
             <!-- Heading -->
             <div class="row mb-4">
                 <div class="col-m-6">
@@ -52,7 +52,7 @@
             </div>
 
             <!-- LabelProblem -->
-            <div class="row mb-3">
+            <div class="row mb-3" >
                 <div class="col">
                     <asp:Label ID="LabelProblem" runat="server" CssClass="form-text text-muted" />
                 </div>
