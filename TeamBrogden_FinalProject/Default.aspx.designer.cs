@@ -69,6 +69,15 @@ namespace TeamBrogden_FinalProject
         protected global::System.Web.UI.WebControls.Button RhodaButton;
 
         /// <summary>
+        /// ProblemHeader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProblemHeader;
+
+        /// <summary>
         /// LabelProblem control.
         /// </summary>
         /// <remarks>
@@ -76,6 +85,15 @@ namespace TeamBrogden_FinalProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelProblem;
+
+        /// <summary>
+        /// Testheader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Testheader;
 
         /// <summary>
         /// LabelTest control.
@@ -94,6 +112,15 @@ namespace TeamBrogden_FinalProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image2;
+
+        /// <summary>
+        /// SolutionHeader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label SolutionHeader;
 
         /// <summary>
         /// LabelSolution control.

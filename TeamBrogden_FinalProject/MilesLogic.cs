@@ -1,10 +1,27 @@
-﻿using System;
+﻿/**
+* File Name: MilesLogic.cs
+
+* Name: Miles Jacobson
+* email:  jacobst3@mail.uc.edu
+* Assignment Number: Final Project
+* Due Date:   04/27/25
+* Course #/Section:   IS3050 001
+* Semester/Year:   Spring 2025
+* Brief Description of the assignment:  Create a .aspx site, styled with bootstrap, that solves diffrent leet code problems.
+
+* Brief Description of what this module does: This project uses all of the skills we have praticed through out the semester to show our undrestanding of html, css, bootstrap, and .asp formats.
+* Citations: Chatgpt.com,https://www.w3schools.com/bootstrap5/bootstrap_grid_system.php,https://leetcode.com/problems/sudoku-solver/description/
+* Anything else that's relevant:ChatGpt used to write solver logic in leetcode problems**/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace TeamBrogden_FinalProject
 {
+    /// <summary>
+    /// SudokuSolver Logic written by chatgpt
+    /// </summary>
     public class SudokuSolver
     {
         public string Run()

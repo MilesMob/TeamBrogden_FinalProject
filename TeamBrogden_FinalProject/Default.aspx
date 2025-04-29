@@ -44,27 +44,54 @@
             <div class="row mb-4">
                 <div class="col-md-12">
                     <asp:Button ID="ResetButton" runat="server" Text="Reset" OnClick="ResetButton_Click" CssClass="btn btn-dark me-2 mb-2" />
-                    <asp:Button ID="MilesButton" runat="server" Text="Problem 37. Sudoku Solver" OnClick="MilesButton_Click" CssClass="btn btn-info me-2 mb-2" />
+                    <asp:Button ID="MilesButton" runat="server" Text="Miles' Problem" OnClick="MilesButton_Click" CssClass="btn btn-info me-2 mb-2" />
                     <asp:Button ID="AndrewButton" runat="server" Text="Andrew's Problem" OnClick="AndrewButton_Click" CssClass="btn btn-light me-2 mb-2" />
                     <asp:Button ID="JoeyButton" runat="server" Text="Joey's Problem" OnClick="JoeyButton_Click" CssClass="btn btn-danger me-2 mb-2" />
                     <asp:Button ID="RhodaButton" runat="server" Text="Rhoda's Problem" OnClick="RhodaButton_Click" CssClass="btn btn-warning me-2 mb-2" />
                 </div>
             </div>
 
-            <!-- LabelProblem -->
+            <!-- LabelProblem+Header -->
+            <div class="row">
+                <div class="col">
+                    <asp:Label ID="ProblemHeader" runat="server" Text="The Problem" CssClass="border-bottom text-info " Visible="false"></asp:Label>
+                </div>
+            </div>
             <div class="row mb-3" >
                 <div class="col">
                     <asp:Label ID="LabelProblem" runat="server" CssClass="form-text text-muted" />
-                    <asp:Label ID="LabelTest" runat="server" />
+                    
                 </div>
             </div>
+            <!-- TestInput+header -->
+            <div class="row">
+                <div class="col" border="bottom">
+                    <asp:Label ID="Testheader" runat="server" Text="Input Values" CssClass="text-success border-bottom" Visible="false" ></asp:Label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <asp:Label ID="LabelTest" runat="server" Font-bold="true"/>
 
-            <!-- Image + Solution-->
+                </div>
+
+            </div>
+
+
+            <!-- Image-->
             <div class="row">
                 <div class="col-md-4">
                     <asp:Image ID="Image2" runat="server" Height="209px" Width="212px" Visible="false" />
                 </div>
-                <div class="col-md-8">
+            </div>
+            <!-- Output Values/Solution-->
+            <div class="row">
+                <div class="col">
+                    <asp:Label ID="SolutionHeader" runat="server" Text="And the solution is..." CssClass=" border-bottom text-primary" Visible="false"></asp:Label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <asp:Label ID="LabelSolution" runat="server" CssClass="form-control-plaintext" />
                 </div>
             </div>

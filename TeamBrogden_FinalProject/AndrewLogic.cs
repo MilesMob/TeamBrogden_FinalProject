@@ -1,4 +1,18 @@
-﻿ using System;
+﻿/*File Name: TeamBrogden_FinalProject
+
+* Name: Andrew Luce
+* email:  luceag@mail.uc.edu
+* Assignment Number: Assignment Final
+* Due Date:   April 28 2025
+* Course #/Section:   IS3050001
+* Semester/Year:   Spring 2025
+* Brief Description of the assignment:  This is our final project which we will create leetcode
+*  that we will share with our team through github
+* Brief Description of what this module does. This module is teaching us ASP.NET
+* Citations: Chatgpt.com https://leetcode.com/problems/cracking-the-safe/description/
+* Anything else that's relevant: n/a
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
